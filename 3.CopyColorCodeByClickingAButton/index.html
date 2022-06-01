@@ -10,8 +10,16 @@
   <body>
     <div class="container" id="root">
       <h1>Change background color</h1>
-      <input id="input-field" type="text" placeholder="#000000" />
-      <button id="change-btn">CHANGE COLOR</button>
+      <div class="input-group">
+        <input
+          id="input-field"
+          class="input-field"
+          type="text"
+          placeholder="#000000"
+        />
+        <button id="copy-btn" class="copy-btn">Copy</button>
+      </div>
+      <button class="change-btn" id="change-btn">CHANGE COLOR</button>
     </div>
     <script src="./app.js"></script>
   </body>

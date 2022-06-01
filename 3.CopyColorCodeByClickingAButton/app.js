@@ -5,11 +5,15 @@ function main() {
   const root = document.getElementById("root");
   const changeBtn = document.getElementById("change-btn");
   const inputField = document.getElementById("input-field");
+  const copyBtn = document.getElementById("copy-btn");
 
   changeBtn.addEventListener("click", function () {
     const bgColor = generateColor();
     root.style.backgroundColor = bgColor;
-    inputField.value = generateColor();
+    inputField.value = bgColor;
+  });
+  copyBtn.addEventListener("click", function () {
+    navigator.clipboard.writeText(inputField.value);
   });
 }
 function generateColor() {
