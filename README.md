@@ -1,3 +1,4 @@
-# DOM Projects
+# DOM Projects list
 
-1. RGB color generate
+- RGB color generate
+- Generate Hexadecimal Color Code
