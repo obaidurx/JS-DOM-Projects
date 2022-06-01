@@ -6,12 +6,12 @@ window.onload = () => {
 function main() {
   const root = document.getElementById("root");
   const btn = document.getElementById("change-btn");
-  const inputField = document.getElementById("input-field");
+  const output = document.getElementById("input-field");
 
   btn.addEventListener("click", function () {
     const bgColor = generateRGBcolor();
     root.style.backgroundColor = bgColor;
-    inputField.value = generateRGBcolor();
+    output.value = generateRGBcolor();
   });
 }
 // step -2 - random color generator
