@@ -30,8 +30,11 @@ function main() {
 
   output.addEventListener("keyup", function (e) {
     const color = e.target.value;
-    if (color && isValidHex(color)) {
-      root.style.backgroundColor = `#${color}`;
+    if (color) {
+      output.value = color.toUpperCase();
+      if (isValidHex(color)) {
+        root.style.backgroundColor = `#${color}`;
+      }
     }
   });
 }
